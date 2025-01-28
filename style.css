@@ -41,7 +41,7 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #D44B4B;
-    
+
     background-image: url(../images/main-pic.png);
     width: 100vw;
     height: 45vh;
@@ -57,11 +57,21 @@ a {
     width: 35vw;
 }
 
-
 .text {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
     line-height: 1.4;
     text-align: left;
+}
+
+.button {
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px 60px;
+    background-color: #fff;
+    color: #475658;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
 }
