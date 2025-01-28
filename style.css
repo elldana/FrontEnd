@@ -75,3 +75,37 @@ a {
     text-decoration: none;
     font-size: 13px;
 }
+
+.info-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7% 14% 4% 14%;
+}
+
+.title {
+    color: #03073C;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.3;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 4vh;
+    width: 60vw;
+}
+
+.text2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: none;
+
+    color: #03073C;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 0;
+    text-align: center;
+
+    box-sizing: border-box;
+}
