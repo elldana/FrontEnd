@@ -109,3 +109,31 @@ a {
 
     box-sizing: border-box;
 }
+
+.card-grid {
+    padding: 0% 14% 4% 14%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.card h3 {
+    font-size: 53px;
+    color: #03073C;
+    text-align: center;
+    border-bottom: 1px solid #475658;
+    padding-bottom: 15px;
+}
+
+.card a {
+    color: #03073C;
+}
+
+.card p {
+    font-size: 14px;
+    padding-top: 0;
+    line-height: 1.5;
+    margin-top: -30px;
+    padding-bottom: 30px;
+}
