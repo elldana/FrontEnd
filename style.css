@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     line-height: 50-x; 
 }
+
 .header-image {
     width: 10;
     height: 10;
@@ -12,6 +13,7 @@ body {
     align-items: center;
     padding: 20px;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -24,9 +26,33 @@ header {
     margin-bottom: 5vh;
     padding-bottom: 2vh;
 }
+
 header a {
     color: #475658;
 }
+
 a {
     text-decoration: none;
+}
+
+.main-block {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #D44B4B;
+
+}
+
+.content-cover {
+    padding: 2% 14% 5% 14%;
+    width: 35vw;
+}
+
+.text {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: left;
 }
