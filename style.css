@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 50-x; 
+}
+.header-image {
+    width: 10;
+    height: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #D9D9D9;
+    font-size: 15px;
+    line-height: 23px;
+    gap: 40px;
+    position: top center;
+    margin-bottom: 5vh;
+    padding-bottom: 2vh;
+}
+header a {
+    color: #475658;
+}
+a {
+    text-decoration: none;
+}
