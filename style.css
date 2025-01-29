@@ -2,7 +2,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 16px;
-    line-height: 50-x; 
+    line-height: 50px; 
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .header-image {
@@ -15,6 +21,7 @@ body {
 }
 
 header {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +36,25 @@ header {
 
 header a {
     color: #475658;
+    width: 16%;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #fff;
+
+    text-align: center;
 }
 
 a {
     text-decoration: none;
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: #fff;
+    border-radius: 30px;
+    background-color: #9fa2a3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 .main-block {
@@ -44,12 +66,13 @@ a {
 
     background-image: url(../images/main-pic.png);
     width: 100vw;
-    height: 45vh;
+    min-height: 45vh;
     background-repeat: no-repeat;
     background-position: right 200px bottom -46px;
     background-size: contain;
     padding-right: 20px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .content-cover {
@@ -57,12 +80,13 @@ a {
     width: 35vw;
 }
 
-.text {
+.main-text {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
     line-height: 1.4;
     text-align: left;
+    font-family: 'Impact', sans-serif;
 }
 
 .button {
@@ -74,7 +98,91 @@ a {
     text-align: center;
     text-decoration: none;
     font-size: 13px;
+    transition: 0.3s;
 }
+
+section {
+    padding: 2% 14% 2% 14%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: #fff;
+    min-height: 450px;
+    scroll-margin-top: 80px ;
+}
+
+section h2 {
+    z-index: 2;
+    font-family: 'Impact', sans-serif;
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 1.3;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 5px;
+    width: 60vw;
+}
+section p {
+    z-index: 2;
+}
+.background {
+    position: relative;
+    background-image: url(../images/d.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    overflow: visible;
+}
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 20%, rgba(125, 122, 122, 0.844) 100%);
+    z-index: 1;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #03073C;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.step-text {
+    z-index: 2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 
 .info-cover {
     display: flex;
@@ -93,9 +201,10 @@ a {
     text-align: center;
     padding-bottom: 4vh;
     width: 60vw;
+    font-family: 'Impact', sans-serif;
 }
 
-.text2 {
+.info-text {
     justify-content: flex-start;
     align-items: flex-start;
     max-height: none;
@@ -108,6 +217,18 @@ a {
     text-align: center;
 
     box-sizing: border-box;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card-grid {
@@ -128,6 +249,10 @@ a {
 
 .card a {
     color: #03073C;
+}
+.card a:hover {
+    color: #fff;
+    transition: all .3s ease;
 }
 
 .card p {
@@ -170,6 +295,11 @@ footer {
     font-size: 13px;
     background-color: #475658;
     gap: 70px;
+
+    background: linear-gradient(45deg, #7a8283, #333);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer_element {
