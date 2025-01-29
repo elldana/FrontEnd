@@ -125,8 +125,12 @@ section h2 {
     width: 60vw;
 }
 section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-style: italic;
     z-index: 2;
 }
+
 .background {
     position: relative;
     background-image: url(../images/d.jpeg);
@@ -147,13 +151,13 @@ section p {
     z-index: 1;
 }
 
-.steps {
+.sell-steps {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.step {
+.sell-step {
     display: flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
@@ -162,7 +166,8 @@ section p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.step-icon {
+
+.sell-icon {
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -176,11 +181,59 @@ section p {
     margin-right: 15px;
 }
 
-.step-text {
+.sell-text {
     z-index: 2;
     color: white;
     font-size: 18px;
     font-weight: bold;
+}
+
+.buy-section {
+    background: linear-gradient(135deg, #D44B4B 30%, #f7793a 100%);
+    color: #fff;
+    padding: 50px 14%;
+    text-align: right;
+    margin-bottom: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buy-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.buy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.buy-step {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buy-step:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.buy-icon {
+    background: #fff;
+    color: #D44B4B;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 
@@ -298,7 +351,6 @@ footer {
 
     background: linear-gradient(45deg, #7a8283, #333);
     color: white;
-    padding: 20px;
     text-align: center;
 }
 
