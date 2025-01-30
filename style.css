@@ -21,7 +21,6 @@ html {
 }
 
 header {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +71,7 @@ a:hover {
     background-size: contain;
     padding-right: 20px;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .content-cover {
@@ -111,6 +110,7 @@ section {
     color: #fff;
     min-height: 450px;
     scroll-margin-top: 80px ;
+    margin-bottom: 15px;
 }
 
 section h2 {
@@ -163,9 +163,9 @@ section p {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
+
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .sell-icon {
     width: 50px;
@@ -236,6 +236,84 @@ section p {
     margin-bottom: 10px;
 }
 
+                
+.stories-section {
+    text-align: center;
+    padding: 50px 14%;
+    background: linear-gradient(135deg, #fff, #9e9d9d);
+    color: #03073C;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.story {
+    min-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+.story img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.story img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.slider-controls button {
+    background: #03073C;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-controls button:hover {
+    background: #1a237e;
+    
+}
+
 
 .info-cover {
     display: flex;
@@ -255,8 +333,8 @@ section p {
     padding-bottom: 4vh;
     width: 60vw;
     font-family: 'Impact', sans-serif;
-}
-
+}                                
+                                                        
 .info-text {
     justify-content: flex-start;
     align-items: flex-start;
@@ -288,7 +366,6 @@ section p {
     padding: 0% 14% 4% 14%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 50px;
 }
 
@@ -349,7 +426,7 @@ footer {
     background-color: #475658;
     gap: 70px;
 
-    background: linear-gradient(45deg, #7a8283, #333);
+    background: linear-gradient(45deg, #7a8283, #262626);
     color: white;
     text-align: center;
 }
