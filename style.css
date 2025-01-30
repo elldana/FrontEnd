@@ -5,6 +5,7 @@ body {
     line-height: 50px; 
     height: 100vh;
     overflow-y: scroll;
+    max-width: 1284px;
 }
 
 html {
@@ -189,7 +190,7 @@ section p {
 }
 
 .buy-section {
-    background: linear-gradient(135deg, #D44B4B 30%, #f7793a 100%);
+    background: linear-gradient(135deg, #D44B4B 30%, #d2cdcb 100%);
     color: #fff;
     padding: 50px 14%;
     text-align: right;
@@ -240,7 +241,7 @@ section p {
 .stories-section {
     text-align: center;
     padding: 50px 14%;
-    background: linear-gradient(135deg, #fff, #9e9d9d);
+    background: linear-gradient(135deg, #fff, #7e7e7e);
     color: #03073C;
 }
 
@@ -418,15 +419,15 @@ section p {
 }
 
 footer {
+    max-width: 1284px;
     padding: 2% 14%;
     display: flex;
-    width: 100%;
     color: #fff;
     font-size: 13px;
     background-color: #475658;
     gap: 70px;
 
-    background: linear-gradient(45deg, #7a8283, #262626);
+    background: linear-gradient(45deg, #a1a6a7, #262626);
     color: white;
     text-align: center;
 }
